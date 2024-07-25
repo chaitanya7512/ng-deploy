@@ -3,12 +3,11 @@ name: Angular CI/CD Pipeline
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 30 # Optional: Set a timeout for the job
 
     steps:
       - name: Checkout code
